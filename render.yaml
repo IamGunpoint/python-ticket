@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: discord-bot
+    env: python
+    plan: free
+    region: oregon
+    runtime: python
+    buildCommand: ""
+    startCommand: python index.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TOKEN
+        value: MTI4MDU3MzkzNzMyNzAxODA5OA.Gei3QL.6-n_DDmdCL7b81Ggd4FqNWy6JDtmQTuWvNHMj8
